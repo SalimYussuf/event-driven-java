@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Root build shortcut — compiles all Java modules across Weeks 1-10.
+# Usage: ./build [--clean] [--week <n>]
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+bash "$DIR/scripts/build.sh" "$@"
